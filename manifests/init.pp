@@ -60,7 +60,6 @@ class passenger (
   $passenger_version      = $passenger::params::passenger_version,
 ) inherits passenger::params {
 
-  include '::apache'
   include '::apache::dev'
 
   include '::passenger::install'
