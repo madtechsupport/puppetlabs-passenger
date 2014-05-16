@@ -72,7 +72,6 @@ class passenger (
 
   #projects.puppetlabs.com - bug - #8040: Anchoring pattern
   Anchor['passenger::begin'] ->
-  Class['apache'] ->
   Class['apache::dev'] ->
   Class['passenger::install'] ->
   Class['passenger::compile'] ->
