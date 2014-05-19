@@ -34,9 +34,9 @@ class passenger::params {
 
       # Ubuntu does not have libopenssl-ruby - it's packaged in libruby
       if $::lsbdistid == 'Debian' and $::lsbmajdistrelease <= 5 {
-        $package_dependencies   = [ 'libopenssl-ruby', 'libcurl4-openssl-dev' ]
+        $package_dependencies   = [ 'libopenssl-ruby', 'libcurl4-openssl-dev', 'ruby-dev' ]
       } else {
-        $package_dependencies   = [ 'libruby', 'libcurl4-openssl-dev' ]
+        $package_dependencies   = [ 'libruby', 'libcurl4-openssl-dev', 'ruby-dev' ]
       }
     }
     'redhat': {
